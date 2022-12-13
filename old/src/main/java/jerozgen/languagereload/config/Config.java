@@ -3,21 +3,20 @@ package jerozgen.languagereload.config;
 import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import jerozgen.languagereload.LanguageReload;
+import net.fabricmc.api.EnvType;
+import net.fabricmc.api.Environment;
+import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.MinecraftClient;
-import net.minecraftforge.api.distmarker.Dist;
-import net.minecraftforge.api.distmarker.OnlyIn;
-import net.minecraftforge.fml.loading.FMLPaths;
 
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.util.Collections;
 import java.util.LinkedList;
 
-@OnlyIn(Dist.CLIENT)
+@Environment(EnvType.CLIENT)
 public class Config {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
-    //private static final Path PATH = FabricLoader.getInstance().getConfigDir().resolve(LanguageReload.MOD_ID + ".json");
-    private static final Path PATH = FMLPaths.CONFIGDIR.get().resolve(LanguageReload.MOD_ID + ".json");
+    private static final Path PATH = FabricLoader.getInstance().getConfigDir().resolve(LanguageReload.MOD_ID + ".json");
 
     private static Config INSTANCE;
 
