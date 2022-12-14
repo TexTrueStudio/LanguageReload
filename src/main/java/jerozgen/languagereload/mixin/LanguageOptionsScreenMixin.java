@@ -16,6 +16,7 @@ import net.minecraft.client.resource.language.LanguageManager;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.screen.ScreenTexts;
 import net.minecraft.text.Text;
+import net.minecraft.text.TranslatableText;
 import org.spongepowered.asm.mixin.Final;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Shadow;
@@ -70,8 +71,8 @@ public abstract class LanguageOptionsScreenMixin extends GameOptionsScreen {
         setInitialFocus(searchBox);
 
         var listWidth = Math.min(width / 2 - 4, 200);
-        availableLanguageList = new LanguageListWidget(client, listWidth, height, Text.translatable("pack.available.title"));
-        selectedLanguageList = new LanguageListWidget(client, listWidth, height, Text.translatable("pack.selected.title"));
+        availableLanguageList = new LanguageListWidget(client, listWidth, height, new TranslatableText("pack.available.title"));
+        selectedLanguageList = new LanguageListWidget(client, listWidth, height, new TranslatableText("pack.selected.title"));
         availableLanguageList.setLeftPos(width / 2 - 4 - listWidth);
         selectedLanguageList.setLeftPos(width / 2 + 4);
         addSelectableChild(availableLanguageList);
