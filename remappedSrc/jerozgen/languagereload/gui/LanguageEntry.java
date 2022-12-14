@@ -14,7 +14,7 @@ import net.minecraft.client.resource.language.LanguageDefinition;
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
-
+import I;
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
@@ -63,8 +63,8 @@ public abstract class LanguageEntry extends ElementListWidget.Entry<LanguageEntr
             }
             buttons.forEach(button -> button.visible = false);
             ButtonRenderer buttonRenderer = (button, x, y) -> {
-                button.x = x;
-                button.y = y;
+                button.setX(x);
+                button.setY(y);
                 button.visible = true;
                 button.render(matrices, mouseX, mouseY, tickDelta);
             };
