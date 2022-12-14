@@ -1,6 +1,6 @@
 modLoader = "javafml"
 loaderVersion = "[43,)"
-license = "All rights reserved"
+license = "MIT"
 
 [[mods]]
 modId = "languagereload"
@@ -24,6 +24,6 @@ side = "BOTH"
 [[dependencies.languagereload]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.19,)"
+versionRange = "[1.19.3,)"
 ordering = "NONE"
 side = "BOTH"
