@@ -1,5 +1,5 @@
 modLoader = "javafml"
-loaderVersion = "[43,)"
+loaderVersion = "[37,)"
 license = "MIT"
 
 [[mods]]
@@ -7,7 +7,7 @@ modId = "languagereload"
 version = "${version}"
 displayName = "Language Reload - Forge"
 displayURL="https://github.com/TexTrueStudio/LanguageReload" #optional
-logoFile="icon.png" #optional
+logoFile= "icon.png" #optional
 credits="Jerozgen" #optional
 authors="TexTrue, TexTrueStudio, BocchiKessokuTeam" #optional
 description = '''
@@ -17,13 +17,13 @@ Reduces load times and adds fallbacks for languages.
 [[dependencies.languagereload]]
 modId = "forge"
 mandatory = true
-versionRange = "[43,)"
+versionRange = "[37,)"
 ordering = "NONE"
 side = "BOTH"
 
 [[dependencies.languagereload]]
 modId = "minecraft"
 mandatory = true
-versionRange = "[1.18,)"
+versionRange = "[1.17,)"
 ordering = "NONE"
 side = "BOTH"
