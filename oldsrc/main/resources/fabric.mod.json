@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "languagereload",
+  "version": "${version}",
+  "name": "Language Reload",
+  "description": "Makes language reloading and switching faster.",
+  "authors": [
+    {"name": "Jerozgen", "contact": {"homepage": "https://github.com/Jerozgen", "discord": "Jerozgen#5500"}}
+  ],
+  "contributors": [
+    {"name": "Benonardo", "contact": {"homepage": "https://github.com/Benonardo"}}
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/language-reload",
+    "sources": "https://github.com/Jerozgen/LanguageReload",
+    "issues": "https://github.com/Jerozgen/LanguageReload/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/languagereload/icon.png",
+  "environment": "client",
+  "mixins": [
+    "languagereload.mixins.json"
+  ],
+  "accessWidener": "languagereload.accesswidener",
+  "depends": {
+    "fabric-resource-loader-v0": "*",
+    "fabricloader": ">=0.11.6",
+    "minecraft": ">=1.17"
+  }
+}
