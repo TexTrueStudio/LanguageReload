@@ -1,0 +1,6 @@
+{
+  "debug.reload_languages.help": "F3 + J = 重载语言（按住Shift以循环切换语言）",
+  "debug.reload_languages.message": "语言已重载",
+  "debug.reload_languages.switch.success": "设置语言为 \"%s\"",
+  "debug.reload_languages.switch.failure": "无法循环切换语言，在设置中切换至其他语言后重试。"
+}
