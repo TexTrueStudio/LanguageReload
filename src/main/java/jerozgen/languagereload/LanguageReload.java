@@ -16,8 +16,9 @@ import org.apache.logging.log4j.Logger;
 
 import java.util.LinkedList;
 
-@Mod(LanguageReload.MOD_ID)
+
 @OnlyIn(Dist.CLIENT)
+@Mod(LanguageReload.MOD_ID)
 public class LanguageReload {
     public static final Logger LOGGER = LogManager.getLogger("Language Reload");
     public static final String MOD_ID = "languagereload";
