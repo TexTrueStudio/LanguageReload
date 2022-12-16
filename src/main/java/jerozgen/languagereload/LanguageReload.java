@@ -10,11 +10,14 @@ import net.minecraft.resource.ResourceManager;
 import net.minecraft.world.chunk.WorldChunk;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.api.distmarker.OnlyIn;
+import net.minecraftforge.fml.common.Mod;
 
 import java.util.concurrent.atomic.AtomicReferenceArray;
 
 @OnlyIn(Dist.CLIENT)
+@Mod(LanguageReload.MOD_ID)
 public class LanguageReload {
+    public static final String MOD_ID = "languagereload";
     public static void reloadLanguages(MinecraftClient client) {
         // Reload language and search managers
         ResourceManager resourceManager = client.getResourceManager();
